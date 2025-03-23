@@ -10,20 +10,19 @@ function CallToAction() {
   return (
     <div className="relative pt-20 pb-16 text-center sm:py-24">
       <hgroup>
-        <Subheading>Get started</Subheading>
+        <Subheading>Tolly</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          Ready to dive in?
+          Kinderbücher, neu erfunden.
           <br />
-          Start your free trial today.
+          Sei  dabei!
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Get the cheat codes for selling and unlock your team&apos;s revenue
-        potential.
+       Hast du schon Zugang zur Beta bekommen? Dann geht's hier zu deinen Büchern & mehr
       </p>
       <div className="mt-6">
         <Button className="w-full sm:w-auto" href="#">
-          Get started
+         Zur Beta
         </Button>
       </div>
     </div>
@@ -53,33 +52,27 @@ function Sitemap() {
   return (
     <>
       <div>
-        <SitemapHeading>Product</SitemapHeading>
+        <SitemapHeading>Kinderbücher</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Analysis</SitemapLink>
-          <SitemapLink href="#">API</SitemapLink>
-        </SitemapLinks>
-      </div>
-      <div>
-        <SitemapHeading>Company</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="#">Careers</SitemapLink>
-          <SitemapLink href="/blog">Blog</SitemapLink>
-          <SitemapLink href="/company">Company</SitemapLink>
+          <SitemapLink href="#">Beliebt</SitemapLink>
+          <SitemapLink href="/blog">Buch gestalten</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
         <SitemapHeading>Support</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Help center</SitemapLink>
-          <SitemapLink href="#">Community</SitemapLink>
+          <SitemapLink href="#">FAQ</SitemapLink>
+          <SitemapLink href="#">Kontaktiere uns</SitemapLink>
+          <SitemapLink href="#">Bestellstatus</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>Company</SitemapHeading>
+        <SitemapHeading>Tolly</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Terms of service</SitemapLink>
-          <SitemapLink href="#">Privacy policy</SitemapLink>
-        </SitemapLinks>
+          <SitemapLink href="#">Über uns</SitemapLink>
+          <SitemapLink href="#">Blog</SitemapLink>
+          <SitemapLink href="#">Reviews</SitemapLink>
+          </SitemapLinks>
       </div>
     </>
   )
@@ -147,7 +140,7 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Radiant Inc.
+      &copy; {new Date().getFullYear()} Tolly | Mit Liebe in Deutschland entwickelt & gedruckt
     </div>
   )
 }

@@ -20,45 +20,38 @@ import { Heading, Subheading } from './text'
 const testimonials = [
   {
     img: '/testimonials/tina-yards.jpg',
-    name: 'Tina Yards',
-    title: 'VP of Sales, Protocol',
+    name: 'Xavier',
+    title: 'Vater',
     quote:
-      'Thanks to Radiant, we’re finding new leads that we never would have found with legal methods.',
+      'Meine Tochter liebt die Abenteuer von unserem Hund, Tequila. Es ist auch wirklich süß & witzig Tequila im Weltall, oder auf einer geheimen Mission in Berlin Mitte zu sehen.',
   },
   {
     img: '/testimonials/conor-neville.jpg',
-    name: 'Conor Neville',
-    title: 'Head of Customer Success, TaxPal',
+    name: 'Patricia',
+    title: 'Mutter',
     quote:
-      'Radiant made undercutting all of our competitors an absolute breeze.',
+      'Meine Tochter hat ihre erste Geschichte geliebt. Als sie unseren Hund in der Geschichte entdeckt hat, ist sie ausgeflippt.',
   },
   {
     img: '/testimonials/amy-chase.jpg',
-    name: 'Amy Chase',
-    title: 'Head of GTM, Pocket',
+    name: 'Marta',
+    title: 'Großmutter',
     quote:
-      'We closed a deal in literally a few minutes because we knew their exact budget.',
+      'Mein Sohn hat mir gezeigt, wie einfach das geht, und mittlerweile erstelle ich Emma fast jede Woche ein neues Buch. Komplett alleine',
   },
   {
     img: '/testimonials/veronica-winton.jpg',
-    name: 'Veronica Winton',
-    title: 'CSO, Planeteria',
+    name: 'Luka',
+    title: 'Onkel',
     quote:
-      'We’ve managed to put two of our main competitors out of business in 6 months.',
+      'Thea & Moritz können gar nicht genug von der Geschichte bekommen, die ich in 2 Minuten für sie erstellt habe',
   },
   {
     img: '/testimonials/dillon-lenora.jpg',
-    name: 'Dillon Lenora',
-    title: 'VP of Sales, Detax',
-    quote: 'I was able to replace 80% of my team with RadiantAI bots.',
-  },
-  {
-    img: '/testimonials/harriet-arron.jpg',
-    name: 'Harriet Arron',
-    title: 'Account Manager, Commit',
-    quote:
-      'I’ve smashed all my targets without having to speak to a lead in months.',
-  },
+    name: 'Flora',
+    title: 'Tante',
+    quote: 'Ich habe das meiner Nichte zu ihrem 5. Geburtstag geschenkt - ist richtig gut angekommen!',
+  }
 ]
 
 function TestimonialCard({
@@ -156,15 +149,14 @@ function CallToAction() {
   return (
     <div>
       <p className="max-w-sm text-sm/6 text-gray-600">
-        Join the best sellers in the business and start using Radiant to hit
-        your targets today.
+        Aktuell sind wir in der Beta-Phase, aber die Warteliste ist offen!
       </p>
       <div className="mt-2">
         <Link
           href="#"
           className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
         >
-          Get started
+          Bin dabei
           <ArrowLongRightIcon className="size-5" />
         </Link>
       </div>
@@ -192,9 +184,9 @@ export function Testimonials() {
     <div className="overflow-hidden py-32">
       <Container>
         <div ref={setReferenceWindowRef}>
-          <Subheading>What everyone is saying</Subheading>
+          <Subheading>Beliebt bei Eltern & Kindern</Subheading>
           <Heading as="h3" className="mt-2">
-            Trusted by professionals.
+            Unsere ersten Kund:innen lieben uns
           </Heading>
         </div>
       </Container>
