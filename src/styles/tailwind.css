@@ -1,7 +1,8 @@
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
 
 @theme {
-  --font-sans: Switzer, system-ui, sans-serif;
+  --font-sans: Lexend, system-ui, sans-serif;
 
   --radius-4xl: 2rem;
 }

@@ -17,8 +17,13 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link
-          rel="stylesheet"
-          href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&amp;display=swap"
+          rel="preconnect" 
+          href="https://fonts.googleapis.com"
+        />
+        <link 
+          rel="preconnect" 
+          href="https://fonts.gstatic.com" 
+          crossOrigin="anonymous"
         />
         <link
           rel="alternate"
