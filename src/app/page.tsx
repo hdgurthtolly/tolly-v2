@@ -102,6 +102,17 @@ function BentoSection() {
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
         <BentoCard
+          eyebrow="Format"
+          title="Als PDF oder Buch"
+          description="Du entscheidest, ob du ein PDF, oder lieber ein gedrucktes Buch bestellen möchtest"
+          graphic={
+            <div className="flex size-full pt-10 pl-10">
+              <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
+            </div>
+          }
+          className="lg:col-span-2 lg:rounded-bl-4xl"
+        />
+        <BentoCard
           eyebrow="Bezahlung"
           title="Sicher & einfach"
           description="Gefällt dir die Vorschau? Von Kreditkarte bis ApplePay - sicher & einfach"
@@ -133,40 +144,44 @@ function DarkBentoSection() {
           Jedes Buch ist ein Unikat, aber die Gestaltung ist dennoch schnell & einfach
         </Heading>
 
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-2 lg:grid-rows-2">
           <BentoCard
             dark
+            eyebrow="Individuell"
             title="Perfekt personalisiert"
             description="Jedes Buch ist so einzigartig wie dein Kind – angepasst an Alter, Vorlieben & Entwicklung"
             graphic={
               <div className="h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat" />
             }
             fade={['top']}
-            className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
+            className="max-lg:rounded-t-4xl lg:rounded-tl-4xl"
           />
           <BentoCard
             dark
+            eyebrow="Entwicklung"
             title="Mitwachsender Inhalt"
             description="Mit jedem Buch lernen wir dazu und passen neue Geschichten noch besser an"
             graphic={<LogoTimeline />}
             // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
-            className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
+            className="z-10 overflow-visible! lg:rounded-tr-4xl"
           />
           <BentoCard
             dark
+            eyebrow="Qualität"
             title="Hochwertige Bücher"
             description="Wir erstellen individuelle Texte, passende Illustrationen & drucken die Bücher in bester Qualität"
             graphic={<LinkedAvatars />}
-            className="lg:col-span-2 lg:rounded-bl-4xl"
+            className="lg:rounded-bl-4xl"
           />
           <BentoCard
+            eyebrow="Lieferung"
             title="Schneller Versand"
             description="In 5–8 Tagen ist das fertige Buch bei dir zu Hause"
             graphic={
               <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat" />
             }
             fade={['top']}
-            className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"
+            className="max-lg:rounded-b-4xl lg:rounded-br-4xl"
           />
         </div>
       </Container>

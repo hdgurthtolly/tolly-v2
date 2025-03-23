@@ -10,7 +10,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Company',
   description:
-    'We’re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
+    'We\'re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
 }
 
 function Header() {
@@ -101,14 +101,22 @@ function Person({
   name,
   description,
   img,
+  linkedIn,
 }: {
   name: string
   description: string
   img: string
+  linkedIn?: string
 }) {
   return (
     <li className="flex items-center gap-4">
-      <img alt="" src={img} className="size-12 rounded-full" />
+      {linkedIn ? (
+        <a href={linkedIn} target="_blank" rel="noopener noreferrer">
+          <img alt="" src={img} className="size-12 rounded-full object-cover" />
+        </a>
+      ) : (
+        <img alt="" src={img} className="size-12 rounded-full object-cover" />
+      )}
       <div className="text-sm/6">
         <h3 className="font-medium">{name}</h3>
         <p className="text-gray-500">{description}</p>
@@ -145,7 +153,7 @@ function Team() {
           <div className="aspect-3/2 overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
             <img
               alt=""
-              src="/company/5.jpg"
+              src="/team/founders.png"
               className="block size-full object-cover"
             />
           </div>
@@ -162,17 +170,20 @@ function Team() {
         <Person
           name="Harry Gurth Angeles"
           description="Co-Founder / CEO"
-          img="/team/michael-foster.jpg"
+          img="/team/harry.png"
+          linkedIn="https://www.linkedin.com/in/harrygurthangeles/"
         />
         <Person
           name="Andreas Solti"
           description="Co-Founder / CTO"
-          img="/team/dries-vincent.jpg"
+          img="/team/andreas.png"
+          linkedIn="https://www.linkedin.com/in/andreassolti/"
         />
         <Person
           name="Marco Borchert"
           description="Co-Founder / COO"
-          img="/team/celeste-vandermark.jpg"
+          img="/team/marco.png"
+          linkedIn="https://www.linkedin.com/in/marco-borchert-aa5213142/"
         />
       </ul>
     </Container>
@@ -199,9 +210,9 @@ function Investors() {
       >
         <li>
           <img
-            alt="Remington Schwartz"
-            src="/investors/remington-schwartz.svg"
-            className="h-14"
+            alt="Druckereien"
+            src="/partners/print.jpg"
+            className="aspect-3/2 overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10"
           />
           <Lead className="mt-6 max-w-3xl">
             Gedruckt von Experten
@@ -211,7 +222,7 @@ function Investors() {
           </p>
         </li>
         <li>
-          <img alt="Deccel" src="/investors/deccel.svg" className="h-14" />
+          <img alt="dhl" src="/partners/dhl.jpg" className="aspect-3/2 overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10" />
           <Lead className="mt-6 max-w-3xl">
             Versandt mit DHL
           </Lead>
@@ -230,7 +241,7 @@ function Testimonial() {
     <div className="relative flex aspect-square flex-col justify-end overflow-hidden rounded-3xl sm:aspect-5/4 lg:aspect-3/4">
       <img
         alt=""
-        src="/testimonials/veronica-winton.jpg"
+        src="/team/harry.png"
         className="absolute inset-0 object-cover"
       />
       <div
@@ -239,16 +250,15 @@ function Testimonial() {
       />
       <figure className="relative p-10">
         <blockquote>
-          <p className="relative text-xl/7 text-white before:absolute before:-translate-x-full before:content-['“'] after:absolute after:content-['”']">
-            We&apos;ve managed to put two of our main competitors out of
-            business in 6 months.
+          <p className="relative text-xl/7 text-white">
+            We are always on the lookout for people that bring unique skills to the table & are excited about our mission
           </p>
         </blockquote>
         <figcaption className="mt-6 border-t border-white/20 pt-6">
-          <p className="text-sm/6 font-medium text-white">Veronica Winton</p>
+          <p className="text-sm/6 font-medium text-white">Harry</p>
           <p className="text-sm/6 font-medium">
             <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
-              CSO, Planeteria
+              Co-founder, Tolly
             </span>
           </p>
         </figcaption>
