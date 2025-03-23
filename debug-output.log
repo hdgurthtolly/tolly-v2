@@ -1,0 +1,27 @@
+
+> radiant@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.11
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1609ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.9s (2550 modules)
+ ✓ Compiled in 633ms (1095 modules)
+ GET / 200 in 5539ms
+ ✓ Compiled in 1312ms (2534 modules)
+ ✓ Compiled in 238ms (1080 modules)
+ ✓ Compiled /login in 430ms (2525 modules)
+ ✓ Compiled /pricing in 230ms (2530 modules)
+ ✓ Compiled /company in 185ms (2537 modules)
+ ○ Compiling /blog ...
+ ✓ Compiled /blog in 1117ms (3085 modules)
+ ✓ Compiled in 1010ms (3095 modules)
+ ✓ Compiled in 244ms (3095 modules)
+ ✓ Compiled in 255ms (3095 modules)
+ ✓ Compiled in 237ms (3095 modules)
+ ✓ Compiled in 214ms (3095 modules)
+ ✓ Compiled in 300ms (3095 modules)

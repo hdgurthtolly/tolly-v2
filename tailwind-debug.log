@@ -1,0 +1,32 @@
+
+> radiant@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.11
+  - Local:        http://localhost:3004
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1648ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.2s (2563 modules)
+ ✓ Compiled in 538ms (1101 modules)
+ GET / 200 in 4805ms
+ ○ Compiling /login ...
+ GET /login 500 in 17ms
+ ✓ Compiled /_error in 1737ms (2785 modules)
+ GET /_next/static/webpack/1b29c8c85d8e2f8d.webpack.hot-update.json 404 in 125ms
+ GET /login 200 in 140ms
+ GET /login 200 in 82ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 570ms (1538 modules)
+ GET /favicon.ico 200 in 633ms
+ ✓ Compiled in 429ms (1291 modules)
+ ✓ Compiled in 322ms (1291 modules)
+ ✓ Compiled in 1284ms (2832 modules)
+ GET / 200 in 367ms
+ ✓ Compiled in 545ms (2819 modules)
+ GET /_next/static/webpack/564c3b0cce22e7a2.webpack.hot-update.json 404 in 37ms
+ GET /login 200 in 92ms
+ GET /favicon.ico 404 in 17ms
+[?25h
