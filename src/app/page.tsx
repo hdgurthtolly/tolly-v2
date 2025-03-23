@@ -121,14 +121,14 @@ function BentoSection() {
               <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
             </div>
           }
-          className="lg:col-span-2 lg:rounded-bl-4xl"
+          className="lg:col-span-2"
         />
         <BentoCard
           eyebrow="Buch"
           title="Gedruckt & versandt"
           description="Wir übernehmen den Druck & liefern das Buch bequem nach Hause"
           graphic={<LogoCluster />}
-          className="lg:col-span-2"
+          className="lg:col-span-2 lg:rounded-br-4xl"
         />
       </div>
     </Container>
